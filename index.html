@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket League Rank Tracker</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./download-removebg-preview.png" alt="" class="logo">
+            <h1>Rank Tracker</h1>
+        </header>
+
+        <section class="search-section">
+            <input type="text" class="search-input" placeholder="Enter Player ID" id="playerId">
+            <button class="search-btn" id="searchBtn">Search Rank</button>
+        </section>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Fetching rank data...</p>
+        </div>
+
+        <div class="error-message" id="errorMessage">
+            <p>Please try again.</p>
+        </div>
+
+        <section class="rank-display" id="rankDisplay">
+            <div class="rank-header">
+                <img src="https://rocket-league.com/content/media/items/avatar/220px/6e45b487d21591939628.png" alt="Rank Icon" class="rank-icon" id="rankIcon">
+                <div class="rank-info">
+                    <h2 id="rankName">Grand Champion</h2>
+                    <p id="playlistName">Ranked 3v3 Standard</p>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Division</h3>
+                    <p id="division">IV</p>
+                </div>
+                <div class="stat-card">
+                    <h3>MMR</h3>
+                    <p id="mmr">1520</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Matches Played</h3>
+                    <p id="matchesPlayed">245</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Win Streak</h3>
+                    <p id="winStreak">3</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

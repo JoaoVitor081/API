@@ -1,0 +1,178 @@
+:root {
+    --primary: #2a475e;
+    --secondary: #1b2838;
+    --accent: #66c0f4;
+    --text: #c7d5e0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--secondary);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    background-image: url('https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt29d7c4f6bc077e9b/5eb26f54402b8b4d13a56656/agent-background-generic.JPG');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--primary);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border-bottom: 4px solid var(--accent);
+}
+
+h1 {
+    margin: 0;
+    color: var(--accent);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.search-section {
+    background-color: var(--primary);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-input {
+    padding: 12px 20px;
+    width: 300px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    background-color: #3d5a73;
+    color: white;
+}
+
+.search-btn {
+    padding: 12px 30px;
+    background-color: var(--accent);
+    color: var(--primary);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.search-btn:hover {
+    background-color: #4da8da;
+    transform: translateY(-2px);
+}
+
+.rank-display {
+    background-color: var(--primary);
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    display: none;
+}
+
+.rank-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 15px;
+}
+
+.rank-icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.rank-info h2 {
+    margin: 0;
+    color: var(--accent);
+    font-size: 1.8rem;
+}
+
+.rank-info p {
+    margin: 5px 0 0;
+    color: var(--text);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.stat-card {
+    background-color: var(--secondary);
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.stat-card h3 {
+    margin: 0 0 10px;
+    color: var(--accent);
+    font-size: 1rem;
+}
+
+.stat-card p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.loading {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top: 4px solid var(--accent);
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 15px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.error-message {
+    color: #ff6b6b;
+    text-align: center;
+    padding: 20px;
+    display: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--text);
+    font-size: 0.9rem;
+}
